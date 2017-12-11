@@ -1,0 +1,80 @@
+.diagnostics{
+	&-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/diagnostics-bg.jpg)no-reepat center center;
+		background-size: cover;
+		height: 774px;
+		// margin-top: 118px;
+		position: relative;
+	}
+	&-inner{
+		border-radius: 4px;
+		background-color: #f9f9f9;
+		padding: 43px 24px;
+		margin-bottom: 138px;
+		&-item{
+			// display: flex;
+			margin-bottom: 30px;
+			@include clearfix;
+			&-left{
+				position: relative;
+				margin-right: 20px;
+				float: left;
+			}
+			&-right{
+				position: relative;
+				float: left;
+				width: 80%;
+			}
+			&__img{
+
+			}
+			&__title{
+				font-family: 'pf_beausans_proregular', sans-serif;
+				font-size: 18px;
+				line-height: 1.33;
+				text-align: left;
+				color: #000000;
+				margin-bottom: 8px;
+			}
+			&__text{
+				font-family: 'Roboto', sans-serif;
+				font-size: 14px;
+				line-height: 1.5;
+				text-align: left;
+				color: #000000;
+				margin-bottom: 22px;
+				opacity: 0.75;
+			}
+			&__footnote{
+				background-color: #fff;
+				border-radius: 100px;
+				max-width: 349px;
+				padding: 5px 0 5px 23px;
+				@include clearfix;
+				&__img{
+					float: left;
+					margin-right: 15px;
+				}
+				&__text{
+					font-family: 'Roboto', sans-serif;
+					font-size: 12px;
+					line-height: 1.5;
+					text-align: left;
+					color: #000;
+					span{
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		&__title{
+			font-family: 'pf_beausans_proregular', sans-serif;
+			font-size: 32px;
+			line-height: 1.44;
+			text-align: left;
+			color: #000000;
+			margin-bottom: 50px;
+		}
+		
+	}
+}

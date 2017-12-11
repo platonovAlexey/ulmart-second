@@ -1,0 +1,225 @@
+//DEFAULT STYLE//
+.top-line{
+	position: absolute;
+	top: 45px;
+	z-index: 1000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	@include clearfix;
+	&__logo{
+		display: inline-block;
+		width: 189px;
+		height: 36px;
+		position: absolute;
+		z-index: 1000;
+		left: 53%;
+		top: 30px;
+		@include MQ(sm) {
+			
+		}
+		@include MQ(xs) {
+			display: block;
+			float: none;
+			text-align: center;
+			margin-left: 0;
+			margin-top: 15px;
+		}
+	}
+	&__shop{
+		display: block;
+		font-size: .75em;
+		background: #c32a4b;
+		color: #fff;
+		text-align: center;
+		padding: 10px 15px;
+		border-radius: 30px;
+		margin: 20px 0;
+		box-shadow: 1px 1px 1px rgba(142,27,52,.5);
+		@include MQ(sm) {
+			margin-right: 10px;
+		}
+		@include MQ(xs) {
+			float: none;
+			font-size: 1em;
+			margin-right: 0;
+		}
+		&:hover{
+			color: #fff;
+			background-color: #ff5534;
+			background-image: -webkit-linear-gradient(#ff5534 0,#e4003a 100%);
+			background-image: linear-gradient(#ff5534 0,#e4003a 100%);
+		}
+	}
+}
+
+
+
+.header{
+	position: relative;
+	height: 100vh;
+	&__link{
+		&-wrap{
+			// min-height: 1067px;
+			height: 100vh;
+			display: block;
+			filter: grayscale(100%);
+			transition:.8s;
+			&:hover{
+				transition:.8s;
+				text-decoration: none;
+			}
+			&:focus{
+				text-decoration: none;
+			}
+			&__mask{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				cursor: pointer;
+				&-one{
+					background: rgba(64,181,206,.5);
+				}
+				&-two{
+					background: rgba(0,156,189,.5);
+				}
+				&-three{
+					background: rgba(64,181,206,.5);
+				}
+			}
+			&__item{
+				position: relative;
+				// display: flex;
+				&-one{
+					background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-1.jpg) no-repeat top left;
+				}
+				&-two{
+					background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2.jpg) no-repeat center center;
+				}
+				&-three{
+					background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-3.jpg) no-repeat top right;
+				}
+
+			}
+		}
+		&-item{
+			// padding-top: 581px;
+			// padding-top: 100%;
+			position: absolute;
+			top: 40%;
+			z-index: 1000;
+		}
+		&-text{
+			font-family: 'pf_beausans_probold', sans-serif;
+			font-size: 48px;
+			line-height: 1.17;
+			text-align: left;
+			color: #ffffff;
+			&:hover{
+				color: #ffffff;
+				text-decoration: none;
+			}
+		}
+		&-icon{
+			background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/header-arr.svg)no-repeat;
+			width: 36px;
+			height: 36px;
+			display: inline-block;
+			margin-left: 10px;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+// .header__link-wrap:hover {
+// 	filter: none;
+// }
+
+.header__link-wrap__mask:hover{
+	background: transparent;
+}
+
+// .header__link-wrap__mask:hover .header__link-wrap{
+// 	filter: none;
+// }
+
+.logo-wrapper{
+	position: relative;
+}
+
+.top-line2{
+	min-height: 66px;
+	margin-bottom: 85px;
+	position: fixed;
+	z-index: 100;
+	background: #fff;
+	width: 100%;
+	// padding: 12px 0;
+	display: none;
+}
+
+.logo__panel{
+	margin: 14px 0;
+	display: inline-block;
+}
+
+// .nav-list:hover:after{
+// 			content: "";
+// 			display: block;
+// 			width: 100%;
+// 			height: 2px;
+// 			background: #009cbd;
+// }
+
+.nav{
+	&-list{
+		margin-top: 0;
+		margin-bottom: 0;
+		list-style-type: none;
+		@include clearfix;
+	}
+	&-item{
+		display: block;
+		float: left;
+		margin-right: 40px;
+	}
+	&-link{
+		font-family: 'Roboto', sans-serif;
+		opacity: 0.75;
+		font-size: 16px;
+		font-weight: 300;
+		padding: 22px 22px;
+		font-size: 14px;
+		line-height: 1.5;
+		text-align: center;
+		color: #000000;
+		display: inline-block;
+		position: relative;
+		transition: .7s;
+		&:hover{
+			color: #000;
+			border-bottom: 1px solid #009cbd;
+			transition: .7s;
+		}
+	}
+}
+
+.nav-link.active{
+	background-image: linear-gradient(to bottom, #009cbd, #00b5db);
+	box-shadow: inset 0 -1px 0 0 #42a7ff;
+	border-bottom: 1px solid #009cbd;
+	color: #fff;
+}
+
+.btn__top{
+	cursor: pointer;
+	display: block;
+}
+
+.header-block-wrapper-link{
+	position: relative;
+}

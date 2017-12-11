@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="70" viewBox="0 0 80 70">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#00B5DB" fill-rule="nonzero" d="M48.2 28.9h1.5v1.5h-1.5v-1.5zm16.8 0h1.5v1.5H65v-1.5zm4.2 0h1.5v1.5h-1.5v-1.5zm-16.8 0h1.5v1.5h-1.5v-1.5zm21 0h1.5v1.5h-1.5v-1.5zm-12.6 0h1.5v1.5h-1.5v-1.5zm-4.2 0h1.5v1.5h-1.5v-1.5zM57.2 15.8h-9.3v6.1h9.3v-6.1zm-1.5 4.6h-6.3v-3.1h6.3v3.1z"/>
+        <path fill="#00B5DB" fill-rule="nonzero" d="M79.3 12H63V8H24.5v26.8H13.8v17.8h3v4.8l6.2-4.8h1.5V65H63V33.5h16.3V12zm-1.5 13.8h-32V13.5h32v12.3zM61.5 9.5V12H44.3v3.3H26V9.5h35.5zm-39 41.6l-4.2 3.3v-3.3h-3V36.3H39v14.8H22.5zM26 63.5v-5.9h35.5v5.9H26zm35.5-7.4H26v-3.6h14.5V34.8H26v-18h18.3v16.7h17.2v22.6zM45.8 32v-4.6h32V32h-32z"/>
+        <path fill="#00B5DB" fill-rule="nonzero" d="M62.9 20.1h12.5v1.5H62.9zM67 17.1h8.4v1.5H67zM47.3 59.9h-7.2c-.4 0-.8.3-.8.8 0 .4.3.8.8.8h7.2c.4 0 .8-.3.8-.8s-.3-.8-.8-.8zM18.7 41h17.1v1.5H18.7zM20.7 45h13.2v1.5H20.7z"/>
+        <path fill="#E9E9E9" d="M44.416 13.954h-3.44v22.38h20.516v-2.836H44.416z" style="mix-blend-mode:multiply"/>
+    </g>
+</svg>

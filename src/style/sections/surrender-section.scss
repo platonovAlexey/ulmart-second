@@ -1,0 +1,53 @@
+.surrender{
+	&-section{
+		background-color: #009cbd;
+		padding: 24px 0 56px 0;
+	}
+	&__title{
+		font-family: 'pf_beausans_proregular';
+		font-size: 32px;
+		line-height: 1.25;
+		text-align: center;
+		color: #ffffff;
+		padding-bottom: 56px;
+	}
+	&-item{
+		position: relative;
+		@include clearfix;
+		margin-bottom: 50px;
+		&__img{
+			width: 64px;
+			height: 64px;
+			background-color: #ffffff;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+			text-align: center;
+			line-height: 64px;
+			border-radius: 50%;
+			margin: 0 auto 16px auto;
+		}
+		&__text{
+			font-family: 'Roboto', sans-serif;
+			font-size: 13px;
+			line-height: 1.5;
+			text-align: center;
+			color: #ffffff;
+		}
+	}
+}
+
+.full__list{
+	opacity: 0.75;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 0;
+  &__link{
+  	text-decoration: none;
+  	color: #ffffff;
+  	&:hover{
+  		text-decoration: underline;
+  		color: #ffffff;
+  	}
+  }
+}

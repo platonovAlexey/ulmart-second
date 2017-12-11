@@ -1,0 +1,36 @@
+.deal{
+	&-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/deal-bg.jpg)no-reepat center center;
+		background-size: cover;
+		height: 774px;
+		margin-top: 0px; //118px
+		position: relative;
+	}
+	&__desc{
+		margin-bottom: 16px;
+		
+	}
+	&-footnote{
+		background-color: #ffffff;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+		border-radius: 100px;
+		max-width: 349px;
+		padding: 5px 0 5px 23px;
+		&__img{
+		float: left;
+		margin-right: 15px;
+			img{
+				width: 41px;
+				height: 37px;
+			}
+		}
+		&__text{
+			font-family: 'Roboto', 'Arial', sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			text-align: left;
+			color: #000000;
+		}
+	}
+	
+}

@@ -1,0 +1,372 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+	.header__link-text{
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.nav-link{
+		padding: 22px 2px;
+	}
+	.storage-item__left{
+		margin-right: 10px;
+		font-size: 30px;
+		line-height: 47px;
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+	.header__link-text{
+		font-size: 48px;
+	}
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.nav-item{
+		margin-right: 10px;
+	}
+	.nav-link{
+		font-size: 12px;
+	}
+	.b-section__title, .subsidiary-item-mt{
+		margin-top: 200px;
+	}
+	.header{
+		height: auto;
+	}
+	.header-block-wrapper-link {
+		height: 300px;
+	}
+	.header__link-item{
+		margin-left: 40px;
+	}
+	.top-line__logo{
+		left: 0;
+		margin-left: 57px;
+	}
+	.header__link-wrap__item-three{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-3.jpg) 0% -2000% no-repeat;
+	}
+	.subsidiary-item__text{
+		float: left;
+		margin-top: 0;
+		margin-left: 18px;
+		margin-bottom: 20px;
+	}
+	.deal-footnote__img{
+		line-height: 37px;
+	}
+	.diagnostics-inner-item__footnote{
+		padding: 5px 0 5px 10px;
+	}
+	.diagnostics-inner-item__footnote__img{
+		margin-right: 10px;
+	}
+	.diagnostics-inner-item__footnote__text{
+		font-size: 10px;
+	}
+	.storage-item__left{
+		margin-right: 15px;
+		font-size: 24px;
+	}
+	.storage-item__right{
+		font-size: 14px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.header__link-wrap__item-one{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-1-md.jpg) top left no-repeat;
+		background-size: contain;
+	}
+	.header__link-wrap__item-two{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-md.jpg) top left no-repeat;
+		background-size: contain;
+	}
+	.header__link-wrap__item-three{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-md.jpg) top left no-repeat;
+		background-size: contain;
+	}
+	.subsidiary-item__img{
+		float: none;
+		text-align: center;
+	}
+	.subsidiary-item__text{
+		margin-left: 45px;
+		margin-top: 16px;
+		float: none;
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width : 600px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-line2{
+		z-index: 1000;
+	}
+	.nav{
+		display: none;
+	}
+	.top-line__logo{
+		top: 0;
+		left: -18px;
+	}
+	.b-section__title{
+		margin-top: 80px;
+	}
+	.subsidiary-item-mt{
+		margin-top: 20px;
+	}
+	.header-block-wrapper-link{
+		height: 205px;
+	}
+	.header__link-wrap__item-one{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-1-mob.jpg) top left no-repeat;
+		background-size: contain;
+	}
+	.header__link-wrap__item-two{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-mob.jpg) top left no-repeat;
+		background-size: contain;
+	}
+	.header__link-wrap__item-three{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-3-mob.jpg) top left no-repeat;
+		background-size: contain;
+	}
+	.header__link-item{
+		margin-left: 15px;
+		top: 26%;
+	}
+	.header__link-text{
+		line-height: 1;
+		font-size: 42px;
+	}
+	.b-section__title{
+		font-size: 48px;
+	}
+	.deal-footnote{
+		@include clearfix;
+	}
+	.deal-footnote__img{
+		margin-right: 10px;
+	}
+	.deal-footnote__text{
+		float: left;
+		font-size: 10px;
+	}
+	.deal-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/deal-bg-mob.jpg) center center;
+		height: 650px;
+	}
+	.diagnostics-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/diagnostics-bg-mob.jpg) center center;
+		height: 720px;
+	}
+	.storage-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/storage-bg-mob.jpg) center center;
+		height: 860px;
+	}
+	.panel-close__text{
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.8;
+	}
+	.subsidiary-dn{
+		display: none;
+	}
+	.sell-wrapper-inner{
+		display: block;
+	}
+	.sell-left{
+		float: left;
+		width: 25%;
+		margin-right: 5px;
+	}
+	.sell-right{
+		float: left;
+		width: 73%;
+	}
+	.sell__btn, .sell__btn{
+		padding: 6px 15px;
+	}
+	.sell-wrapper-inner-another{
+		margin-bottom: 30px;
+	}
+	.sell__title-big{
+		font-size: 32px;
+		line-height: 1.44;
+	}
+	.sell__picture-dn{
+		display: none;
+	}
+	.buy-wrapper{
+		@include clearfix;
+	}
+	.buy__img{
+		float: left;
+		width: 30%;
+	}
+	.buy__right {
+		float: left;
+		width: 70%;
+	}
+	.diagnostics-inner__title{
+		font-size: 23px;
+		margin-bottom: 25px;
+	}
+	.diagnostics-inner-item-left{
+		width: 25%;
+		margin-right: 5px;
+	}
+	.diagnostics-inner-item-right{
+		width: 72%;
+	}
+	.storage-wrapper{
+		margin-top: 20px;
+	}
+	.surrender-item__text{
+		font-size: 14px;
+	}
+	.subsidiary-item__text{
+		margin-left: 70px;
+	}
+	.diagnostics-inner-item__footnote{
+		padding: 5px 5px 5px 15px;
+	}
+	.diagnostics-inner-item__footnote__img{
+		margin-right: 10px;
+		width: 15%;
+	}
+	.diagnostics-inner-item__footnote__text{
+		font-size: 10px;
+		float: left;
+		width: 75%;
+		line-height: 1.3;
+	}
+	.diagnostics-inner{
+		margin-bottom: 50px;
+	}
+	.surrender__title{
+		font-size: 20px;
+	}
+	.full__list{
+		font-size: 12px;
+	}
+	.storage-memo__list-item, .storage-memo__text{
+		font-size: 12px;
+	}
+	.sell-wrapper-inner-another .sell-right{
+		width: 70%;
+	}
+	.sell-wrapper-inner, .sell-wrapper-inner-another, .buy-wrapper{
+		margin-bottom: 40px;
+	}
+	.social__item{
+		width: 36px;
+		height: 36px;
+		margin-right: 25px;
+	}
+	.tooltip-hidden{
+		left: 0;
+		width: 300px;
+	}
+	.tooltip-hidden:after{
+		left: 50%;
+	}
+	.header__link-item-mod{
+		top: 35%;
+	}
+
+
+
+	a.footer__logo{
+		display: block;
+		margin-bottom: 20px;
+	}
+	.social__list{
+		justify-content: flex-start;
+	}
+	.footer__btn{
+		font-size: 12px;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width : 375px){
+	.subsidiary-item__text{
+		margin-left: 50px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.storage-item__left{
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	.subsidiary-item__text{
+		margin-left: 25px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

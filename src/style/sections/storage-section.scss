@@ -1,0 +1,132 @@
+.storage{
+	&-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/storage-bg.jpg)no-reepat center center;
+		background-size: cover;
+		height: 774px;
+		// margin-top: 118px;
+		position: relative;
+	}
+	&-wrapper{
+		margin-top: 381px;
+	}
+	&-item{
+		min-height: 80px;
+		padding: 16px;
+		@include clearfix;
+		&__left{
+			float: left;
+			font-family: 'pf_beausans_probold', sans-serif;
+			font-size: 42px;
+			font-weight: bold;
+			line-height: 1;
+			text-align: left;
+			color: #ffffff;
+			&-one{
+				margin-right: 28px;
+			}
+			&-two{
+				margin-right: 28px;
+			}
+			&-three{
+				margin-right: 28px;
+			}
+		}
+		&__right{
+			font-family: 'pf_beausans_proregular', sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: left;
+			color: #ffffff;
+		}
+		&-one{
+			background-color: #009cbd;
+		}
+		&-two{
+			background-color: #00b5db;
+		}
+		&-three{
+			background-color: rgba(0, 181, 219, 0.75);
+			margin-bottom: 24px;
+		}
+	}
+	&-memo{
+		&-wrapper{
+			border-radius: 4px;
+			background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/storage-memo-bg.svg)no-repeat 0% 100%, radial-gradient(circle at 0 50%, #ff8030, #eb6320);
+			padding: 6px 24px 6px 24px;
+			margin-bottom: 56px;
+			@include clearfix;
+		}
+		&__title{
+		font-family: 'pf_beausans_proregular', sans-serif;
+		font-size: 24px;
+		line-height: 1.33;
+		text-align: left;
+		color: #ffffff;
+		margin-top: 2px;
+	}
+	&__text{
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		line-height: 1.5;
+		text-align: left;
+		color: #ffffff;
+		margin-top: 2px;
+		margin-bottom: 10px;
+		span{
+			font-weight: bold;
+		}
+	}
+	&__list{
+		position: relative;
+		list-style: none;
+		&-item{
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			line-height: 2.29;
+			text-align: left;
+			color: #ffffff;
+			margin-left: 20px;
+			position: relative;
+			&:before{
+				content: "";
+				display: block;
+				width: 2px;
+				height: 2px;
+				background-color: #fff;
+				border-radius: 50%;
+				position: absolute;
+				left: -15px;
+				top: 15px;
+			}
+			// margin-bottom: 10px;
+		}
+	}
+	}
+}
+
+.attetion{
+	@include clearfix;
+	position: relative;
+	padding: 6px 9px;
+	border-radius: 100px;
+	background-color: #ffffff;
+	max-width: 255px;
+	&__img{
+		float: left;
+		margin-right: 4px;
+		img{
+			display: block;
+			width: 15px;
+			height: 13px;
+		}
+	}
+	&__text{
+		float: left;
+			font-family: 'Roboto', sans-serif;
+			font-size: 12px;
+			line-height: 1;
+			text-align: left;
+			color: #000000;
+	}
+}

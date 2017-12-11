@@ -1,0 +1,563 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+
+body
+	.layout_center_wrapper-project
+		header.header
+			.container-fluid.p-0
+				.row
+					.col-xl-4.col-lg-4.col-12.p-0.js-header-hover-one
+						a(class="top-line__logo" href="https://new.discount.ulmart.ru", target="_blank")
+							img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/logo-ulmart-second.svg", alt="logo")
+						.header-block-wrapper-link
+							.header__link-item.header__link-item-mod
+								.offset-xl-6.col-xl-6
+									a(href="#deal-section", class="header__link-text") Безопасная сделка
+									span.header__link-icon
+							a(href="#deal-section", class="header__link-wrap header__link-wrap__item-one")
+							.header__link-wrap__mask.header__link-wrap__mask-one
+					.col-xl-4.col-lg-4.col-12.p-0.js-header-hover-two
+						.header-block-wrapper-link
+							.header__link-item
+								.offset-xl-2.col-xl-10
+									a(href="#diagnostics-section", class="header__link-text")
+										|Бесплатная 
+										br
+										|диагностика
+										br
+										| товара
+									span.header__link-icon
+							a(href="#diagnostics-section", class="header__link-wrap header__link-wrap__item-two")
+							.header__link-wrap__mask.header__link-wrap__mask-two
+					.col-xl-4.col-lg-4.col-12.p-0.js-header-hover-three
+						.header-block-wrapper-link
+							.header__link-item
+								.col-xl-12
+									a(href="#storage-section", class="header__link-text")
+										|Хранение 
+										br
+										|товара
+									span.header__link-icon
+							a(href="#storage-section", class="header__link-wrap header__link-wrap__item-three")
+							.header__link-wrap__mask.header__link-wrap__mask-three
+
+	#deal-section
+		section.b-section.deal-section
+			.top-line2
+				.container
+					.row
+						.col-lg-3.col-md-3.col-sm-12.col-8.align-self-center.justify-content-center
+							a(class="logo__panel" href="https://new.discount.ulmart.ru", target="_blank")
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/logo-ulmart-second.svg", alt="logo")
+						.col-xl-1.col-lg-1.col-md-1.col-sm-1.col-4.align-self-center.justify-content-center
+							btn(class="btn__top", id="toTop")
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/top.svg", alt="")
+						.col-lg-8.col-md-8.col-sm-12
+							nav.nav
+								ul.nav-list
+									li.nav-item
+										a(href="#deal-section", class="nav-link") Безопасная сделка
+									li.nav-item
+										a(href="#diagnostics-section", class="nav-link") Бесплатная диагностика товара
+									li.nav-item
+										a(href="#storage-section", class="nav-link") Хранение товара
+			.container
+				.row
+					.offset-xl-1.offset-lg-1.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12
+						h2.b-section__title.deal__title
+							|Безопасная 
+							br
+							|сделка
+						p.b-section__desc.deal__desc
+							|Сервис позволяет покупать и продавать товары частных продавцов с помощью онлайн-оплаты банковскими картами.
+						.deal-footnote
+							.deal-footnote__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/footnote.svg", alt="")
+							.deal-footnote__text
+								|До окончания сделки деньги хранятся
+								br
+								|на безопасном счету под защитой Юлмарта.
+
+					.col-xl-5.col-lg-5.col-md-6.col-sm-12.col-12
+						.subsidiary-item.subsidiary-item-mt
+							.subsidiary-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/subsidiary1.png", alt="")
+							.subsidiary-item__text.subsidiary-item__text-mod
+								|Ищите товары
+								br
+								|с отметкой
+								br
+								|«Безопасная сделка».
+
+		.panel-wrapper
+			btn(href="#", class="panel-close__link panel-close__link-one")
+				.container
+					.row
+						.col-12
+							span.panel-close__text Как продавать ?
+							span.panel-close__icon.panel-close__icon-one +
+		.panel-close__hidden-one
+			.sell-wrapper
+				.container
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|1
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon1.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Разместите объявление
+									.sell__text
+										|Это бесплатно.
+									a(href="https://new.discount.ulmart.ru/wizard", class="sell__btn", target="_blank") Разместить объявление
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|2
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon2.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Привяжите банковскую карту для приёма платежей
+									.sell__text
+										|Для проверки актуальности мы спишем с неё сумму в размере одного рубля.
+									btn(href="#", class="sell__tooltip", id="sell__tooltip-one") Как и где это сделать ?
+									.tooltip-hidden.tooltip-hidden-one
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|3
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon3.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Подключите сервис «Безопасная сделка» 
+									.sell__text
+										|В редакторе объявления, на шаге указания цены, сдвиньте переключатель сервиса.
+									btn(href="#", class="sell__tooltip", id="sell__tooltip-two") Как и где это сделать ?
+									.tooltip-hidden.tooltip-hidden-two
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|4
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon4.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Следите за уведомлениями о внесённой оплате
+									.sell__text
+										|После внесения предоплаты вам придёт СМС-уведомление и сообщение на электронную почту. 
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|5
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon5.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Встретьтесь с покупателем 
+									.sell__text
+										|Сделка активна в течение пяти дней с момента внесения предоплаты. 
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|6
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon6.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Получите у покупателя код активации платежа в обмен на товар
+									.sell__text
+										|Код состоит из девяти символов (одной постоянной заглавной буквы и восьми цифр): 
+										btn(href="#", class="sell__tooltip sell__tooltip-five", id="sell__tooltip-five") U XXXX XXXX.
+										.tooltip-hidden.tooltip-hidden-five
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner
+								.sell-left
+									.sell__step
+										|7
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon7.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Активируйте платёж
+									.sell__text
+										|Деньги поступят на вашу карту.
+
+					.row
+						.col-lg-4.col-md-4.col-sm-4.col-12
+							.sell-wrapper-inner-another
+								.sell__title-big
+									|Где вводить код?
+								.sell__text
+									|Вы можете использовать один из двух вариантов активации кода: на странице сделки, как показано в примере, или через мобильный активатор.
+								a(href="https://new.discount.ulmart.ru/mak", class="sell__btn", target="_blank") Использовать мобильный активатор
+						.col-lg-8.col-md-8.col-sm-8.col-12
+							.sell-wrapper-inner-another
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-img.jpg", alt="", width="731px", height="146px", class="sell__picture")
+								.sell__actived
+									|Активация на странице сделки
+
+		.panel-wrapper
+			a(href="#", class="panel-close__link panel-close__link-two")
+				.container
+					.row
+						.col-12
+							span.panel-close__text Как покупать ?
+							span.panel-close__icon.panel-close__icon-two +
+		.panel-close__hidden-two
+			.sell-wrapper.sell-wrapper-inner-another
+				.container
+					.row
+						.col-lg-3.col-md-4.col-sm-6.col-12
+							.buy-wrapper
+								.buy__img
+									.sell__step
+										|1
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/buy-icon1.svg", alt="")
+								.buy__right
+									.buy__title
+										|Добавьте товар в корзину 
+									.buy__text
+										|Нажмите кнопку «Купить» в карточке товара с «Безопасной сделкой».
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/buy-img.jpg", alt="", width="255px", height="300px", class="sell__picture sell__picture-dn")
+
+						.offset-lg-1.col-lg-3.col-md-4.col-sm-6.col-12
+							.buy-wrapper
+								.buy__img
+									.sell__step
+										|2
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/buy-icon2.svg", alt="")
+								.buy__right
+									.buy__title
+										|Оплатите товар 
+									.buy__text
+										|Внесите предоплату онлайн. Вам придёт код активации. Деньги будут храниться под защитой Юлмарта до момент получения товара.
+						.offset-lg-1.col-lg-3.col-md-4.col-sm-6.col-12
+							.buy-wrapper
+								.buy__img
+									.sell__step
+										|3
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/buy-icon3.svg", alt="")
+								.buy__right
+									.buy__title
+										|Передайте код активации продавцу в обмен на товар
+									.buy__text
+										|После активации продавец получит СМС-уведомление о скором поступлении средств. Деньги будут зачислены на его банковскую карту.
+
+	#diagnostics-section
+		section.b-section.diagnostics-section
+			.container
+				.row
+					.offset-xl-1.offset-lg-1.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12
+						h2.b-section__title.diagnostics__title
+							|Бесплатная диагностика товара 
+						p.b-section__desc.deal__desc
+							|Проверьте работоспособность товара, внешний вид и его базовые технические характеристики. Добросовестному продавцу нечего скрывать, и он всегда готов пройти диагностику.
+					.col-xl-5.col-lg-5.col-md-6.col-sm-12.col-12
+						.subsidiary-item.subsidiary-item-mt
+							.subsidiary-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/subsidiary2.png", alt="", class="subsidiary-item__picture")
+							.subsidiary-item__text
+								|Ищите товары
+								br
+								|с отметкой «Бесплатная
+								br
+								| диагностика». 
+						.subsidiary-item.subsidiary-dn
+							.subsidiary-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/subsidiary3.png", alt="")
+							.subsidiary-item__text
+								|Вы можете встретиться
+								br
+								| с продавцом в Юлмарте 
+								br
+								|и перед покупкой
+								br
+								|проверить его товар. 
+
+		section.diagnostics-section-inner
+			.container
+				.row
+					.diagnostics-inner
+						.row
+							.col-12
+								.diagnostics-inner__title
+									|Для проведения
+									br
+									| диагностики вам нужно:
+						.row
+							.col-lg-6.col-md-6.col-sm-6.col-12
+								.diagnostics-inner-item
+									.diagnostics-inner-item-left
+										.diagnostics-inner-item__img
+											.sell__step
+												|1
+											img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/diagnostics-icon1.svg", alt="")
+									.diagnostics-inner-item-right
+										.diagnostics-inner-item__title
+											|Оплатить товар 
+										.diagnostics-inner-item__text
+											|Внесите предоплату онлайн. Вам придёт код активации платежа.
+							.col-lg-6.col-md-6.col-sm-6.col-12
+								.diagnostics-inner-item
+									.diagnostics-inner-item-left
+										.diagnostics-inner-item__img
+											.sell__step
+												|2
+											img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/diagnostics-icon2.svg", alt="")
+									.diagnostics-inner-item-right
+										.diagnostics-inner-item__title
+											|Договориться с продавцом о встрече в одном из центров исполнения заказов Юлмарта:
+										ul.sell__list
+											li.sell__list__item пр. Сизова д. 2;
+											li.sell__list__item ул. Благодатная, д. 50; 
+											li.sell__list__item Пулковское шоссе, д. 43, корп. 2, лит. А;
+											li.sell__list__item Муринская дорога, д. 24, стр. 1.
+
+						.row
+							.col-lg-6.col-md-6.col-sm-6.col-12
+								.diagnostics-inner-item
+									.diagnostics-inner-item-left
+										.diagnostics-inner-item__img
+											.sell__step
+												|3
+											img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/diagnostics-icon3.svg", alt="")
+									.diagnostics-inner-item-right
+										.diagnostics-inner-item__title
+											|Обратиться к менеджеру гарантийного центра
+										.diagnostics-inner-item__text
+											|Сообщите менеджеру номер сделки и передайте товар для диагностики.
+										.diagnostics-inner-item__footnote
+											.diagnostics-inner-item__footnote__img
+												img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/diagnostics-footnote.svg", alt="")
+											.diagnostics-inner-item__footnote__text
+												span Режим работы гарантийных центров:
+												br
+												| вторник — суббота с 10:00 до 21:00
+							.col-lg-6.col-md-6.col-sm-6.col-12
+								.diagnostics-inner-item
+									.diagnostics-inner-item-left
+										.diagnostics-inner-item__img
+											.sell__step
+												|4
+											img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/diagnostics-icon4.svg", alt="")
+									.diagnostics-inner-item-right
+										.diagnostics-inner-item__title
+											|Передать код активации платежа менеджеру
+										.diagnostics-inner-item__text
+											|Приняв решение, сообщите код активации платежа менеджеру, чтобы он активировал платёж или, наоборот, отменил сделку.
+
+	#storage-section
+		section.b-section.storage-section
+			.container
+				.row
+					.offset-xl-1.offset-lg-1.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12
+						h2.b-section__title.storage__title
+							|Хранение товара
+							br
+							|в Юлмарте 
+						h3.b-section__subtitle.storage__title
+							|Продавать свои товары, не встречаясь с покупателями? Легко!
+						p.b-section__desc.deal__desc
+							|Отнесите товар на хранение в Юлмарт. Покупатели смогут самостоятельно приезжать и осматривать ваш товар, а после успешной продажи деньги поступят на вашу банковскую карту.
+					.col-xl-5.col-lg-5.col-md-6.col-sm-12.col-12
+						.storage-wrapper
+							.col-8
+								.storage-item.storage-item-one
+									.storage-item__left.storage-item__left-one
+										|190 ₽
+									.storage-item__right
+										|Стоимость хранения
+							.col-10
+								.storage-item.storage-item-two
+									.storage-item__left.storage-item__left-two
+										|30 дней
+									.storage-item__right
+										|Срок
+										br
+										| хранения
+							.col-12
+								.storage-item.storage-item-three
+									.storage-item__left.storage-item__left-three
+										|Паспорт РФ
+									.storage-item__right
+										|Необходимые 
+										br
+										|документы
+								.attetion
+									.attetion__img
+										img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/attetion-icon.png", alt="")
+									.attetion__text
+										|Доступно только в Санкт-Петербурге
+
+		section.storage-memo
+			.container
+				.row
+					.offset-xl-1.offset-lg-1.col-lg-10.col-md-10.col-sm-10.col-12
+						.storage-memo-wrapper
+							.container
+								.row
+									.col-lg-5.col-md-5.col-sm-5.col-12
+										.storage-memo__title
+											|В каких центрах исполнения заказов Юлмарта можно хранить товар?
+									.offset-xl-2.offset-lg-2.col-xl-5.col-lg-5.col-md-5.col-sm-5.col-12
+										p.storage-memo__text
+											|Товар принимается в гарантийных центрах
+											br
+											|со 
+											span вторника по субботу  с 10:00 до 21:00:
+										ul.storage-memo__list
+											li.storage-memo__list-item пр. Сизова д. 2;
+											li.storage-memo__list-item ул. Благодатная, д. 50; 
+											li.storage-memo__list-item Пулковское шоссе, д. 43, корп. 2, лит. А;
+											li.storage-memo__list-item Муринская дорога, д. 24, стр. 1.
+
+		.panel-wrapper
+			a(href="#", class="panel-close__link panel-close__link-three")
+				.container
+					.row
+						.col-12
+							span.panel-close__text Как сдать товар на хранение?
+							span.panel-close__icon.panel-close__icon-three +
+		.panel-close__hidden-three
+			.sell-wrapper
+				.container
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner-another
+								.sell-left
+									.sell__step
+										|1
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-icon1.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Разместите объявление
+									.sell__text
+										|Это бесплатно.
+									a(href="https://new.discount.ulmart.ru/wizard", class="sell__btn", target="_blank") Разместить объявление
+									
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner-another
+								.sell-left
+									.sell__step
+										|2
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-icon2.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Привяжите банковскую карту для приёма платежей
+									.sell__text
+										|Для проверки актуальности мы спишем с неё сумму в размере одного рубля.
+									btn(href="#", class="sell__tooltip", id="sell__tooltip-three") Как и где это сделать ?
+									.tooltip-hidden.tooltip-hidden-three
+
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner-another
+								.sell-left
+									.sell__step
+										|3
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-icon3.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Подключите сервис «Безопасная сделка» 
+									.sell__text
+										|В редакторе объявления, на шаге указания цены, сдвиньте переключатель сервиса.
+									btn(href="#", class="sell__tooltip", id="sell__tooltip-four") Как и где это сделать ?
+									.tooltip-hidden.tooltip-hidden-four
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner-another
+								.sell-left
+									.sell__step
+										|4
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-icon4.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|В разделе «Мои объявления» у товаров, которые можно сдать на хранение, появится специальная отметка:
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-img.svg", alt="", width="285px", height="54px", class="sell__picture")
+
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner-another
+								.sell-left
+									.sell__step
+										|5
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-icon5.svg", alt="", class="sell__picture")
+								.sell-right
+									.sell__title
+										|Отнесите товар в один из центров исполнения заказов Юлмарта 
+									.sell__text
+										|Приёмка товара осуществляется менеджерами гарантийного центра.
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							.sell-wrapper-inner-another
+								.sell-left
+									.sell__step
+										|6
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-icon6.svg", alt="", class="sell__picture sell__picture-icon", width="80px", height="70px")
+								.sell-right
+									.sell__title
+										|Управляйте ценой и рассказывайте о товаре своим друзьям и подписчикам в социальных сетях и на других торговых площадках
+
+
+		section.surrender-section
+			.surrender__title
+				|Какие категории товаров можно 
+				br
+				|сдать на хранение?
+			.container
+				.row
+					.col-lg-2.col-md-2.col-sm-4.col-6
+						.surrender-item
+							.surrender-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/surrender-icon1.svg", alt="")
+							.surrender-item__text
+								|Комплектующие для ПК
+					.col-lg-2.col-md-2.col-sm-4.col-6
+						.surrender-item
+							.surrender-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/surrender-icon2.svg", alt="")
+							.surrender-item__text
+								|Компьютеры и ноутбуки
+					.col-lg-2.col-md-2.col-sm-4.col-6
+						.surrender-item
+							.surrender-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/surrender-icon3.svg", alt="")
+							.surrender-item__text
+								|Планшеты и игровые приставки
+					.col-lg-2.col-md-2.col-sm-4.col-6
+						.surrender-item
+							.surrender-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/surrender-icon4.svg", alt="")
+							.surrender-item__text
+								|Смартфоны
+					.col-lg-2.col-md-2.col-sm-4.col-6
+						.surrender-item
+							.surrender-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/surrender-icon5.svg", alt="")
+							.surrender-item__text
+								|Видеокамеры
+					.col-lg-2.col-md-2.col-sm-4.col-6
+						.surrender-item
+							.surrender-item__img
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/surrender-icon5.svg", alt="")
+							.surrender-item__text
+								|Фотоаппараты
+				.row
+					.col-lg-4.col-sm-6.col-md-4.col-12
+						p.full__list 
+							| Полный список категории — в разделе 
+							a(href="https://new.discount.ulmart.ru/help", target="_blank", class="full__list__link") «Помощь»
+							|.
+
+
+
+	+footer-text()
+
+
+	include blocks/footer-service/footer-service
