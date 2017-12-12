@@ -32,5 +32,18 @@
 			color: #000000;
 		}
 	}
-	
+}
+
+.sell-wrapper-inner-another{
+	z-index: 1;
+}
+
+.sell-wrapper-inner-another__bg{
+	position: absolute;
+	z-index: -1;
+	left: -60px;
+	img{
+		width: 311px;
+		height: 300px;
+	}
 }

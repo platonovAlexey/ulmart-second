@@ -50,6 +50,7 @@
 				border-radius: 100px;
 				max-width: 349px;
 				padding: 5px 0 5px 23px;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 				@include clearfix;
 				&__img{
 					float: left;

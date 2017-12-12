@@ -1,9 +1,18 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1600px) {
+@media only screen and (max-width : 1680px) {
 	.header__link-text{
 		font-size: 35px;
+	}
+	.sell-left{
+		float: left;
+		width: 80px;
+		height: 70px;
+	}
+	.sell-right{
+		float: left;
+		width: 80%;
 	}
 }
 
@@ -16,13 +25,53 @@
 		font-size: 30px;
 		line-height: 47px;
 	}
+	.sell__btn{
+		padding: 6px 15px;
+	}
 }
 
 @media only screen and (max-width : 1024px) {
 	.header__link-text{
 		font-size: 48px;
 	}
-	
+	.b-section__title{
+		margin-top: 200px;
+	}
+	.subsidiary-item-mt{
+		margin-top: 200px;
+	}
+	.top-line__logo{
+		left: 0;
+		margin-left: 57px;
+	}
+	.footer__btn{
+		font-size: 12px;
+		padding: 6px 16px;
+	}
+	.sell__btn{
+		padding: 6px 15px;
+	}
+	.surrender-item__text{
+		font-size: 14px;
+	}
+	.subsidiary-item__img{
+		float: none;
+		text-align: center;
+	}
+	.subsidiary-item__text{
+		margin-left: 64px;
+		margin-top: 12px;
+		float: none;
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.storage-wrapper{
+		margin-top: 200px;
+	}
+	.storage-memo__list-item{
+		font-size: 13px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -49,8 +98,20 @@
 		left: 0;
 		margin-left: 57px;
 	}
+	.header__link-wrap__item-one{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-1-md.jpg) top left no-repeat;
+		background-size: cover;
+		height: 300px;
+	}
+	.header__link-wrap__item-two{
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-md.jpg) top left no-repeat;
+		background-size: cover;
+		height: 300px;
+	}
 	.header__link-wrap__item-three{
-		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-3.jpg) 0% -2000% no-repeat;
+		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-md.jpg) top left no-repeat;
+		background-size: cover;
+		height: 300px;
 	}
 	.subsidiary-item__text{
 		float: left;
@@ -76,6 +137,9 @@
 	}
 	.storage-item__right{
 		font-size: 14px;
+	}
+	.sell-wrapper-inner-another__bg{
+		top: -70px;
 	}
 }
 
@@ -103,19 +167,18 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+	.header__link-text{
+		display: inline-block;
+		width: 170px;
+	}
+	.header__link-item-mod2{
+		top: 22%;
+	}
+	.header__link-item-mod3{
+		top: 22%;
+	}
 
-	.header__link-wrap__item-one{
-		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-1-md.jpg) top left no-repeat;
-		background-size: contain;
-	}
-	.header__link-wrap__item-two{
-		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-md.jpg) top left no-repeat;
-		background-size: contain;
-	}
-	.header__link-wrap__item-three{
-		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/header-bg-2-md.jpg) top left no-repeat;
-		background-size: contain;
-	}
+	
 	.subsidiary-item__img{
 		float: none;
 		text-align: center;
@@ -126,15 +189,53 @@
 		float: none;
 		font-size: 15px;
 	}
+	.buy-wrapper{
+		margin-bottom: 40px;
+	}
 
 }
 
-@media only screen and (max-width : 600px){
-
+@media only screen and (max-width : 767px){
+	.nav{
+		display: none;
+	}
+	.b-section__title{
+		margin-top: 100px;
+	}
+	.storage-wrapper{
+		margin-top: 0;
+	}
+	.storage-item__left{
+		margin-right: 20px;
+		font-size: 28px;
+	}
+	.storage-item__right{
+		font-size: 19px;
+	}
+	.footer__btn{
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	.subsidiary-item-mt-mod{
+		margin-top: 50px;
+	}
+	.subsidiary-dn{
+		display: none;
+	}
+	a.footer__logo {
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+	.social__list{
+		justify-content: flex-start;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.header__link-text{
+		width: 140px;
+	}
 	.top-line2{
 		z-index: 1000;
 	}
@@ -186,6 +287,7 @@
 	.deal-footnote__text{
 		float: left;
 		font-size: 10px;
+		line-height: 2;
 	}
 	.deal-section{
 		background: url(https://fast.ulmart.ru/ns/verstka/ulmart-second/img/deal-bg-mob.jpg) center center;
@@ -308,6 +410,16 @@
 	}
 	.header__link-item-mod{
 		top: 35%;
+	}
+	.storage-item__left{
+		margin-right: 5px;
+	}
+	.storage-item__left{
+		font-size: 20px;
+		margin-right: 12px;
+	}
+	.storage-item__right{
+		font-size: 15px;
 	}
 
 

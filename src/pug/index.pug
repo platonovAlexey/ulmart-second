@@ -15,12 +15,12 @@ body
 							.header__link-item.header__link-item-mod
 								.offset-xl-6.col-xl-6
 									a(href="#deal-section", class="header__link-text") Безопасная сделка
-									span.header__link-icon
+									a(href="#deal-section", class="header__link-icon header__link-text")
 							a(href="#deal-section", class="header__link-wrap header__link-wrap__item-one")
 							.header__link-wrap__mask.header__link-wrap__mask-one
 					.col-xl-4.col-lg-4.col-12.p-0.js-header-hover-two
 						.header-block-wrapper-link
-							.header__link-item
+							.header__link-item.header__link-item-mod2
 								.offset-xl-2.col-xl-10
 									a(href="#diagnostics-section", class="header__link-text")
 										|Бесплатная 
@@ -28,18 +28,18 @@ body
 										|диагностика
 										br
 										| товара
-									span.header__link-icon
+									a(href="#diagnostics-section", class="header__link-icon header__link-text")
 							a(href="#diagnostics-section", class="header__link-wrap header__link-wrap__item-two")
 							.header__link-wrap__mask.header__link-wrap__mask-two
 					.col-xl-4.col-lg-4.col-12.p-0.js-header-hover-three
 						.header-block-wrapper-link
-							.header__link-item
+							.header__link-item.header__link-item-mod3
 								.col-xl-12
 									a(href="#storage-section", class="header__link-text")
 										|Хранение 
 										br
 										|товара
-									span.header__link-icon
+									a(href="#storage-section", class="header__link-icon header__link-text")
 							a(href="#storage-section", class="header__link-wrap header__link-wrap__item-three")
 							.header__link-wrap__mask.header__link-wrap__mask-three
 
@@ -48,10 +48,10 @@ body
 			.top-line2
 				.container
 					.row
-						.col-lg-3.col-md-3.col-sm-12.col-8.align-self-center.justify-content-center
+						.col-lg-3.col-md-3.col-sm-8.col-8.align-self-center.justify-content-center
 							a(class="logo__panel" href="https://new.discount.ulmart.ru", target="_blank")
 								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/logo-ulmart-second.svg", alt="logo")
-						.col-xl-1.col-lg-1.col-md-1.col-sm-1.col-4.align-self-center.justify-content-center
+						.col-xl-1.col-lg-1.col-md-1.col-sm-4.col-4.align-self-center.justify-content-center
 							btn(class="btn__top", id="toTop")
 								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/top.svg", alt="")
 						.col-lg-8.col-md-8.col-sm-12
@@ -80,8 +80,8 @@ body
 								br
 								|на безопасном счету под защитой Юлмарта.
 
-					.col-xl-5.col-lg-5.col-md-6.col-sm-12.col-12
-						.subsidiary-item.subsidiary-item-mt
+					.col-xl-5.col-lg-5.col-md-6.col-sm-8.col-12
+						.subsidiary-item.subsidiary-item-mt.subsidiary-item-mt-mod
 							.subsidiary-item__img
 								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/subsidiary1.png", alt="")
 							.subsidiary-item__text.subsidiary-item__text-mod
@@ -102,7 +102,7 @@ body
 			.sell-wrapper
 				.container
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -114,7 +114,7 @@ body
 									.sell__text
 										|Это бесплатно.
 									a(href="https://new.discount.ulmart.ru/wizard", class="sell__btn", target="_blank") Разместить объявление
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -128,7 +128,7 @@ body
 									btn(href="#", class="sell__tooltip", id="sell__tooltip-one") Как и где это сделать ?
 									.tooltip-hidden.tooltip-hidden-one
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -141,7 +141,7 @@ body
 										|В редакторе объявления, на шаге указания цены, сдвиньте переключатель сервиса.
 									btn(href="#", class="sell__tooltip", id="sell__tooltip-two") Как и где это сделать ?
 									.tooltip-hidden.tooltip-hidden-two
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -153,7 +153,7 @@ body
 									.sell__text
 										|После внесения предоплаты вам придёт СМС-уведомление и сообщение на электронную почту. 
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -164,7 +164,7 @@ body
 										|Встретьтесь с покупателем 
 									.sell__text
 										|Сделка активна в течение пяти дней с момента внесения предоплаты. 
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -178,7 +178,7 @@ body
 										btn(href="#", class="sell__tooltip sell__tooltip-five", id="sell__tooltip-five") U XXXX XXXX.
 										.tooltip-hidden.tooltip-hidden-five
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner
 								.sell-left
 									.sell__step
@@ -191,16 +191,18 @@ body
 										|Деньги поступят на вашу карту.
 
 					.row
-						.col-lg-4.col-md-4.col-sm-4.col-12
+						.col-lg-4.col-md-12.col-sm-12.col-12
 							.sell-wrapper-inner-another
+								.sell-wrapper-inner-another__bg
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/question-icon.svg", alt="")
 								.sell__title-big
 									|Где вводить код?
 								.sell__text
 									|Вы можете использовать один из двух вариантов активации кода: на странице сделки, как показано в примере, или через мобильный активатор.
 								a(href="https://new.discount.ulmart.ru/mak", class="sell__btn", target="_blank") Использовать мобильный активатор
-						.col-lg-8.col-md-8.col-sm-8.col-12
+						.col-lg-8.col-md-12.col-sm-12.col-12
 							.sell-wrapper-inner-another
-								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-img.jpg", alt="", width="731px", height="146px", class="sell__picture")
+								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/sell-img.gif", alt="", width="731px", height="146px", class="sell__picture")
 								.sell__actived
 									|Активация на странице сделки
 
@@ -215,7 +217,7 @@ body
 			.sell-wrapper.sell-wrapper-inner-another
 				.container
 					.row
-						.col-lg-3.col-md-4.col-sm-6.col-12
+						.col-lg-3.col-md-4.col-sm-12.col-12
 							.buy-wrapper
 								.buy__img
 									.sell__step
@@ -226,9 +228,9 @@ body
 										|Добавьте товар в корзину 
 									.buy__text
 										|Нажмите кнопку «Купить» в карточке товара с «Безопасной сделкой».
-									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/buy-img.jpg", alt="", width="255px", height="300px", class="sell__picture sell__picture-dn")
+									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/buy-img.gif", alt="", width="255px", height="300px", class="sell__picture sell__picture-dn")
 
-						.offset-lg-1.col-lg-3.col-md-4.col-sm-6.col-12
+						.offset-lg-1.col-lg-3.col-md-4.col-sm-12.col-12
 							.buy-wrapper
 								.buy__img
 									.sell__step
@@ -239,7 +241,7 @@ body
 										|Оплатите товар 
 									.buy__text
 										|Внесите предоплату онлайн. Вам придёт код активации. Деньги будут храниться под защитой Юлмарта до момент получения товара.
-						.offset-lg-1.col-lg-3.col-md-4.col-sm-6.col-12
+						.offset-lg-1.col-lg-3.col-md-4.col-sm-12.col-12
 							.buy-wrapper
 								.buy__img
 									.sell__step
@@ -260,8 +262,8 @@ body
 							|Бесплатная диагностика товара 
 						p.b-section__desc.deal__desc
 							|Проверьте работоспособность товара, внешний вид и его базовые технические характеристики. Добросовестному продавцу нечего скрывать, и он всегда готов пройти диагностику.
-					.col-xl-5.col-lg-5.col-md-6.col-sm-12.col-12
-						.subsidiary-item.subsidiary-item-mt
+					.col-xl-5.col-lg-5.col-md-6.col-sm-8.col-12
+						.subsidiary-item.subsidiary-item-mt.subsidiary-item-mt-mod
 							.subsidiary-item__img
 								img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/subsidiary2.png", alt="", class="subsidiary-item__picture")
 							.subsidiary-item__text
@@ -293,7 +295,7 @@ body
 									br
 									| диагностики вам нужно:
 						.row
-							.col-lg-6.col-md-6.col-sm-6.col-12
+							.col-lg-6.col-md-6.col-sm-12.col-12
 								.diagnostics-inner-item
 									.diagnostics-inner-item-left
 										.diagnostics-inner-item__img
@@ -305,7 +307,7 @@ body
 											|Оплатить товар 
 										.diagnostics-inner-item__text
 											|Внесите предоплату онлайн. Вам придёт код активации платежа.
-							.col-lg-6.col-md-6.col-sm-6.col-12
+							.col-lg-6.col-md-6.col-sm-12.col-12
 								.diagnostics-inner-item
 									.diagnostics-inner-item-left
 										.diagnostics-inner-item__img
@@ -322,7 +324,7 @@ body
 											li.sell__list__item Муринская дорога, д. 24, стр. 1.
 
 						.row
-							.col-lg-6.col-md-6.col-sm-6.col-12
+							.col-lg-6.col-md-6.col-sm-12.col-12
 								.diagnostics-inner-item
 									.diagnostics-inner-item-left
 										.diagnostics-inner-item__img
@@ -341,7 +343,7 @@ body
 												span Режим работы гарантийных центров:
 												br
 												| вторник — суббота с 10:00 до 21:00
-							.col-lg-6.col-md-6.col-sm-6.col-12
+							.col-lg-6.col-md-6.col-sm-12.col-12
 								.diagnostics-inner-item
 									.diagnostics-inner-item-left
 										.diagnostics-inner-item__img
@@ -400,14 +402,14 @@ body
 		section.storage-memo
 			.container
 				.row
-					.offset-xl-1.offset-lg-1.col-lg-10.col-md-10.col-sm-10.col-12
+					.offset-xl-1.offset-lg-1.col-lg-10.col-md-12.col-sm-12.col-12
 						.storage-memo-wrapper
 							.container
 								.row
-									.col-lg-5.col-md-5.col-sm-5.col-12
+									.col-lg-5.col-md-5.col-sm-12.col-12
 										.storage-memo__title
 											|В каких центрах исполнения заказов Юлмарта можно хранить товар?
-									.offset-xl-2.offset-lg-2.col-xl-5.col-lg-5.col-md-5.col-sm-5.col-12
+									.offset-xl-2.offset-lg-2.col-xl-5.col-lg-5.col-md-7.col-sm-12.col-12
 										p.storage-memo__text
 											|Товар принимается в гарантийных центрах
 											br
@@ -430,7 +432,7 @@ body
 			.sell-wrapper
 				.container
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner-another
 								.sell-left
 									.sell__step
@@ -443,7 +445,7 @@ body
 										|Это бесплатно.
 									a(href="https://new.discount.ulmart.ru/wizard", class="sell__btn", target="_blank") Разместить объявление
 									
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner-another
 								.sell-left
 									.sell__step
@@ -458,7 +460,7 @@ body
 									.tooltip-hidden.tooltip-hidden-three
 
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner-another
 								.sell-left
 									.sell__step
@@ -471,7 +473,7 @@ body
 										|В редакторе объявления, на шаге указания цены, сдвиньте переключатель сервиса.
 									btn(href="#", class="sell__tooltip", id="sell__tooltip-four") Как и где это сделать ?
 									.tooltip-hidden.tooltip-hidden-four
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner-another
 								.sell-left
 									.sell__step
@@ -483,7 +485,7 @@ body
 									img(src="https://fast.ulmart.ru/ns/verstka/ulmart-second/img/svg-icons/keep-img.svg", alt="", width="285px", height="54px", class="sell__picture")
 
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner-another
 								.sell-left
 									.sell__step
@@ -494,7 +496,7 @@ body
 										|Отнесите товар в один из центров исполнения заказов Юлмарта 
 									.sell__text
 										|Приёмка товара осуществляется менеджерами гарантийного центра.
-						.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-lg-6.col-md-6.col-sm-12.col-12
 							.sell-wrapper-inner-another
 								.sell-left
 									.sell__step
@@ -549,7 +551,7 @@ body
 							.surrender-item__text
 								|Фотоаппараты
 				.row
-					.col-lg-4.col-sm-6.col-md-4.col-12
+					.col-lg-6.col-md-12.col-sm-12.col-12
 						p.full__list 
 							| Полный список категории — в разделе 
 							a(href="https://new.discount.ulmart.ru/help", target="_blank", class="full__list__link") «Помощь»
