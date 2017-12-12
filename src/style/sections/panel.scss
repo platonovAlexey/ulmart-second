@@ -266,6 +266,11 @@
 	position: absolute;
 	z-index: 10;
 	display: none;
+	&-wrapper{
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+	}
 	&-one{
 		margin-top: 10px;
 	}

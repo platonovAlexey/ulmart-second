@@ -139,8 +139,18 @@
 		font-size: 14px;
 	}
 	.sell-wrapper-inner-another__bg{
-		top: -70px;
+		top: -25px;
+		img{
+			width: 250px;
+			height: 250px;
+		}
 	}
+	// .tooltip-hidden{
+	// 	right: 0;
+	// 	&:after{
+	// 		left: 50%;
+	// 	}
+	// }
 }
 
 /* Small Devices, Tablets */
@@ -247,7 +257,7 @@
 		left: -18px;
 	}
 	.b-section__title{
-		margin-top: 80px;
+		margin-top: 50px;
 	}
 	.subsidiary-item-mt{
 		margin-top: 20px;
@@ -331,9 +341,9 @@
 		font-size: 32px;
 		line-height: 1.44;
 	}
-	.sell__picture-dn{
-		display: none;
-	}
+	// .sell__picture-dn{
+	// 	display: none;
+	// }
 	.buy-wrapper{
 		@include clearfix;
 	}
@@ -416,7 +426,7 @@
 	}
 	.storage-item__left{
 		font-size: 20px;
-		margin-right: 12px;
+		margin-right: 5px;
 	}
 	.storage-item__right{
 		font-size: 15px;
@@ -448,7 +458,7 @@
 @media only screen and (max-width : 320px) {
 	.storage-item__left{
 		font-size: 16px;
-		margin-right: 10px;
+		margin-right: 5px;
 	}
 	.subsidiary-item__text{
 		margin-left: 25px;
